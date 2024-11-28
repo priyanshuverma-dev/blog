@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Writings - Priyanshu Verma</title><link>https://priyanshuverma-dev.github.io/blog/</link><description>Recent content on My Writings - Priyanshu Verma</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 14 Nov 2024 11:49:23 +0000</lastBuildDate><atom:link href="https://priyanshuverma-dev.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Fluvio with Cloud Cluster for free.</title><link>https://priyanshuverma-dev.github.io/blog/deploy-fluvio-with-cloud-cluster-for-free./</link><pubDate>Thu, 14 Nov 2024 11:49:23 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/deploy-fluvio-with-cloud-cluster-for-free./</guid><description>&lt;p>Hello builders,
+Many of you knows me but in case I am Priyanshu Verma, An Open-source Indie Developer.&lt;/p>
+&lt;p>In this Article we are going to talk about how you can deploy Fluvio integrated apps like APIs on internet for free.
+It is very easy to do so, As Today I will guide you how to. So, Without any delay let&amp;rsquo;s see what to do.&lt;/p>
+&lt;p>As To deploy fluvio we need a project with it&amp;rsquo;s integration. I have one from recent &lt;a href="https://dev.to/priyanshuverma/series/28713">Fluvio Series&lt;/a>.
+This is a basic Nodejs Express API with some endpoints and fluvio integration. I won&amp;rsquo;t explain more about it you can explore this on &lt;a href="https://github.com/priyanshuverma-dev/fluvio-deploy-example">GitHub&lt;/a>. This article is just for deployment.&lt;/p></description></item><item><title>My journey of open-sourcing 2024</title><link>https://priyanshuverma-dev.github.io/blog/my-journey-of-open-sourcing-2024/</link><pubDate>Wed, 06 Nov 2024 16:02:56 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/my-journey-of-open-sourcing-2024/</guid><description>&lt;h2 id="introduction-">Introduction 👋&lt;/h2>
+&lt;p>Hello Devs!
+I am Priyanshu Verma, a aspiring Technologist and Open-source developer. I have recently participated in bunch of events in October.&lt;/p>
+&lt;p>I have participated in events:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://hacktoberfest.com/">Hacktoberfest&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://devfest.ai/">Devfest&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://quira.sh/quests/creator/details?questId=21">Quira Hacktoberfest&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://gssoc.girlscript.tech/">GSSOC&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>This October 2024 was my busiest year in open-source.&lt;/p>
+&lt;p>&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/052jchu61ihha7w6ktmz.png" alt="GitHub Stats">&lt;/p>
+&lt;h2 id="hacktoberfest-2024">Hacktoberfest 2024&lt;/h2>
+&lt;p>This is my 2nd year of participating in Hacktoberfest and this year I broke my record of pulling requests.&lt;/p>
+&lt;p>&lt;img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6rwcjq36gw5cb2k2720c.png" alt="Hacktoberfest Stats">&lt;/p>
+&lt;p>I have contributed in bunch of repositories will tell in next sections.&lt;/p></description></item><item><title>Best AI APIs to build smart apps with Free tiers.</title><link>https://priyanshuverma-dev.github.io/blog/best-ai-apis-to-build-smart-apps-with-free-tiers./</link><pubDate>Sun, 29 Sep 2024 12:30:17 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/best-ai-apis-to-build-smart-apps-with-free-tiers./</guid><description>&lt;p>Hello, fellow code wranglers!&lt;/p>
+&lt;p>Today, we’re diving into the magical world of AI APIs—the kind of tech that can turn your app from “meh” to “whoa!” faster than you can say “machine learning.” And as indie developers, we know budgets can feel like that last slice of pizza at a party: always in danger of disappearing. So, we’re spotlighting some incredible APIs that have free tiers, perfect for stretching those dollars like they’re made of elastic!&lt;/p></description></item><item><title>Yes, It's easy to build a Fluvio connector in Rust.</title><link>https://priyanshuverma-dev.github.io/blog/yes-its-easy-to-build-a-fluvio-connector-in-rust./</link><pubDate>Sun, 08 Sep 2024 07:32:57 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/yes-its-easy-to-build-a-fluvio-connector-in-rust./</guid><description>&lt;p>In today’s fast-paced world, real-time data is no longer a luxury—it’s a necessity. Whether you&amp;rsquo;re monitoring live stock prices, analyzing social media trends, or syncing spreadsheets for instant insights, having data at your fingertips can make all the difference. That’s where &lt;strong>&lt;a href="https://www.fluvio.io">Fluvio&lt;/a>&lt;/strong> comes in, a platform designed to streamline your data journey by offering a powerful, yet easy-to-use, infrastructure for building and managing data pipelines.&lt;/p>
+&lt;p>&lt;strong>But here’s the real magic of Fluvio:&lt;/strong> It gives you the tools to not only move data between systems but also build your very own custom connectors! Imagine you’re working with Google Sheets, and you want your data to flow seamlessly from a Fluvio topic into a spreadsheet in real-time. Manually exporting data sounds tedious, right? What if you could build an outbound connector that does all this for you automatically?&lt;/p></description></item><item><title>Fluvio - An open-source In-motion data framework.</title><link>https://priyanshuverma-dev.github.io/blog/fluvio---an-open-source-in-motion-data-framework./</link><pubDate>Tue, 20 Aug 2024 16:59:24 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/fluvio---an-open-source-in-motion-data-framework./</guid><description>&lt;p>Hello enthusiasts,&lt;/p>
+&lt;p>Today we are going to learn about &lt;a href="https://www.fluvio.io/">Fluvio&lt;/a> work with this technology. This post is not about theory it&amp;rsquo;s a practical based article. You can checkout Fluvio&amp;rsquo;s own &lt;a href="https://www.infinyon.com/blog/2021/06/introducing-fluvio/">blogs&lt;/a> to learn about fluvio deep.&lt;/p>
+&lt;h2 id="why-to-read-this-article">Why to read this article?&lt;/h2>
+&lt;p>Yes, you can find the documentation about &lt;a href="https://www.fluvio.io/">Fluvio&lt;/a> in the corners of internet but you can&amp;rsquo;t get a end-to-end project that&amp;rsquo;s what this article provides you. Believe me at the end you will find yourself confident with fluvio and one simple yet complex project.
+Let&amp;rsquo;s dive right in!&lt;/p></description></item><item><title>Let's integrate auth.js with Supabase!</title><link>https://priyanshuverma-dev.github.io/blog/lets-integrate-auth.js-with-supabase/</link><pubDate>Mon, 05 Aug 2024 13:37:53 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/lets-integrate-auth.js-with-supabase/</guid><description>&lt;p>Hello everyone,
+Recently I was building a chat app. It was very quick to build a real-time app with supabase. I was amazed.
+I used this tech stack:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://nextjs.org">Next.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://authjs.dev">Auth.js&lt;/a> (next-auth)&lt;/li>
+&lt;li>&lt;a href="https://supabase.com">Supabase&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>I am not going to cover full project in this post feel free to comment for that. For now We are going to setup authentication with auth.js and supabase. So, Let&amp;rsquo;s begain.&lt;/p>
+&lt;h2 id="step-1-create-a-nextjs-project">Step 1: Create a next.js project.&lt;/h2>
+&lt;p>There are many ways to create next.js project. I am going to use &lt;a href="https://bun.sh">Bun&lt;/a>. It is faster then alternatives as of now 😊.&lt;/p></description></item><item><title>Create your own template for cyclops</title><link>https://priyanshuverma-dev.github.io/blog/create-your-own-template-for-cyclops/</link><pubDate>Mon, 22 Jul 2024 06:08:10 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/create-your-own-template-for-cyclops/</guid><description>&lt;p>Hello there,
+In this blog we are going to make a custom template for &lt;a href="https://cyclops-ui.com">Cyclops&lt;/a>. So, that we can easily is full power of cyclops.&lt;/p>
+&lt;h2 id="what-is-cyclops">What is Cyclops?&lt;/h2>
+&lt;p>Cyclops is an innovative web-based tool designed to simplify the management of distributed systems, specifically focusing on the widely used Kubernetes platform. By providing a user-friendly interface, Cyclops abstracts complex Kubernetes configuration files into intuitive web forms, making it easier for developers to deploy applications and manage Kubernetes environments. It offers predefined fields and graphical representations of deployments, enhancing visibility and reducing the learning curve associated with Kubernetes. Cyclops aims to empower IT operations teams, DevOps teams, developers and business owners, enabling them to streamline processes, increase productivity, and achieve cost savings in managing Kubernetes clusters. &lt;a href="https://cyclops-ui.com/docs/about">(Read More)&lt;/a>&lt;/p></description></item><item><title>Showcase Your Achievements Securely with CertiFolio 🚀</title><link>https://priyanshuverma-dev.github.io/blog/showcase-your-achievements-securely-with-certifolio-/</link><pubDate>Sat, 22 Jun 2024 03:48:13 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/showcase-your-achievements-securely-with-certifolio-/</guid><description>&lt;p>Hello Dev.to community!&lt;/p>
+&lt;p>We&amp;rsquo;re thrilled to introduce &lt;a href="https://certifolio-web.vercel.app/">&lt;strong>CertiFolio&lt;/strong>&lt;/a>, a groundbreaking platform designed to securely upload, showcase, and verify your certificates and achievements using the power of the InterPlanetary File System (IPFS).&lt;/p>
+&lt;h2 id="why-certifolio">Why CertiFolio?&lt;/h2>
+&lt;p>In today’s digital age, managing and verifying your credentials can be cumbersome and insecure. CertiFolio leverages decentralized storage to offer a robust, user-friendly solution to this problem. Here’s a sneak peek into what makes CertiFolio unique:&lt;/p>
+&lt;h3 id="-features">🌟 Features&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Decentralized Storage&lt;/strong>: Store your certificates on IPFS for secure, permanent access, eliminating the risk of centralized data breaches.&lt;/li>
+&lt;li>&lt;strong>Verification&lt;/strong>: Utilize blockchain technology to ensure the authenticity of your certificates, making verification seamless and trustworthy.&lt;/li>
+&lt;li>&lt;strong>User-Friendly Interface&lt;/strong>: Our intuitive design simplifies the process of uploading, viewing, and managing your achievements.&lt;/li>
+&lt;/ul>
+&lt;h2 id="-getting-started">🚀 Getting Started&lt;/h2>
+&lt;p>Ready to take CertiFolio for a spin? Follow these steps to set up and start using the platform:&lt;/p></description></item><item><title>Build your own SSO Service with next-auth integration</title><link>https://priyanshuverma-dev.github.io/blog/build-your-own-sso-service-with-next-auth-integration/</link><pubDate>Sat, 15 Jun 2024 03:52:14 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/build-your-own-sso-service-with-next-auth-integration/</guid><description>&lt;p>The SSO Service is a robust Single Sign-On (SSO) solution designed to streamline authentication and authorization across multiple applications. Users can authenticate once and seamlessly access various applications without the need for repeated login.&lt;/p>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>To install and run the SSO Service, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Clone the repository:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git clone https://github.com/priyanshuverma-dev/sso-service.git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Install the dependencies:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd sso-service
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>yarn
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Configure the SSO Service:&lt;/p>
+&lt;ul>
+&lt;li>Open the &lt;code>.env.example&lt;/code> file and update essential configuration options, including database connection details and secret keys.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Start the SSO Service:&lt;/p></description></item><item><title>Custom SSO Implementation</title><link>https://priyanshuverma-dev.github.io/blog/custom-sso-implementation/</link><pubDate>Sat, 15 Jun 2024 03:49:15 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/custom-sso-implementation/</guid><description>&lt;p>The SSO Implementation repository contains the implementation details and examples for seamlessly integrating the SSO Service into your applications.&lt;/p>
+&lt;h2 id="repository-link">Repository Link&lt;/h2>
+&lt;p>&lt;a href="https://github.com/priyanshuverma-dev/sso-implementation">SSO Implementation Repository&lt;/a>&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;h3 id="1-example-integrations">1. Example Integrations&lt;/h3>
+&lt;p>Explore comprehensive examples demonstrating how to integrate the SSO Service into various types of applications, providing a foundation for seamless authentication and authorization.&lt;/p>
+&lt;h3 id="2-usage-guidelines">2. Usage Guidelines&lt;/h3>
+&lt;p>Clear and detailed guidelines on using the SSO Service within your applications, ensuring a smooth and secure single sign-on experience for end-users.&lt;/p></description></item><item><title>Saavn Music Player for Windows</title><link>https://priyanshuverma-dev.github.io/blog/saavn-music-player-for-windows/</link><pubDate>Wed, 12 Jun 2024 16:25:46 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/saavn-music-player-for-windows/</guid><description>&lt;p>Welcome to the Saavn Music Player for Windows, an open-source desktop application that allows you to enjoy your favorite music seamlessly. This music player is powered by the Saavn API and built with Flutter, providing a robust and modern user experience.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Seamless Music Playback&lt;/strong>: Enjoy high-quality music playback with an intuitive interface.&lt;/li>
+&lt;li>&lt;strong>Search and Discover&lt;/strong>: Use the Saavn API to search for your favorite songs, albums, and artists.&lt;/li>
+&lt;li>&lt;strong>Playlist Management&lt;/strong>: Create and manage your playlists easily.&lt;/li>
+&lt;li>&lt;strong>Rich Metadata&lt;/strong>: View detailed metadata for each track, including album art, artist information, and more.&lt;/li>
+&lt;li>&lt;strong>Cross-Platform&lt;/strong>: Built with Flutter, ensuring a consistent experience across different devices.&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation">Installation&lt;/h2>
+&lt;p>To install the Saavn Music Player for Windows, follow these steps:&lt;/p></description></item><item><title>Checkcup - Browserless Puppetter Project Build.</title><link>https://priyanshuverma-dev.github.io/blog/checkcup---browserless-puppetter-project-build./</link><pubDate>Mon, 10 Jun 2024 09:48:16 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/checkcup---browserless-puppetter-project-build./</guid><description>&lt;h2 id="checkcup">Checkcup&lt;/h2>
+&lt;p>Checkcup is a website monitoring tool that fetches the status of websites along with screenshots and active status. It is built using Next.js for the frontend and Puppeteer with Browserless in the backend.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>Fetches website status including HTTP status code, response time, and active status.&lt;/li>
+&lt;li>Captures screenshots of websites for visual verification.&lt;/li>
+&lt;li>Supports monitoring multiple websites simultaneously.&lt;/li>
+&lt;/ul>
+&lt;h2 id="demo">Demo&lt;/h2>
+&lt;p>{% embed &lt;a href="https://github.com/priyanshuverma-dev/quine-checkcup">https://github.com/priyanshuverma-dev/quine-checkcup&lt;/a> %}&lt;/p>
+&lt;h2 id="live-preview">Live Preview&lt;/h2>
+&lt;p>You can view a live preview of Checkcup &lt;a href="https://quine-checkcup.vercel.app/">here&lt;/a>.&lt;/p></description></item><item><title>My Hacktoberfest 2023 Experience</title><link>https://priyanshuverma-dev.github.io/blog/my-hacktoberfest-2023-experience/</link><pubDate>Sat, 28 Oct 2023 15:50:55 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/my-hacktoberfest-2023-experience/</guid><description>&lt;p>My Hacktoberfest 2023 Experience&lt;/p>
+&lt;h3 id="intro">Intro&lt;/h3>
+&lt;p>Hey there! I&amp;rsquo;m excited to share my experience as a contributor during Hacktoberfest 2023. This isn&amp;rsquo;t my first Hacktoberfest; I&amp;rsquo;ve been participating for a few years now, and each year has been a unique journey filled with learning and growth. You can check out my GitHub profile &lt;a href="https://github.com/priyanshuverma-dev">here&lt;/a>.&lt;/p>
+&lt;h3 id="highs-and-lows">Highs and Lows&lt;/h3>
+&lt;p>This year, I had some fantastic highs and a few challenging lows. One of my biggest accomplishments was getting one of my pull requests accepted in a major open-source project. It was a feature I had been working on for a while, and seeing it integrated into the project was incredibly satisfying. This achievement boosted my confidence and encouraged me to continue contributing.&lt;/p></description></item></channel></rss>

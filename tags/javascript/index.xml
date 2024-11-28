@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on My Writings - Priyanshu Verma</title><link>https://priyanshuverma-dev.github.io/blog/tags/javascript/</link><description>Recent content in Javascript on My Writings - Priyanshu Verma</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 10 Jun 2024 09:48:16 +0000</lastBuildDate><atom:link href="https://priyanshuverma-dev.github.io/blog/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>Checkcup - Browserless Puppetter Project Build.</title><link>https://priyanshuverma-dev.github.io/blog/checkcup---browserless-puppetter-project-build./</link><pubDate>Mon, 10 Jun 2024 09:48:16 +0000</pubDate><guid>https://priyanshuverma-dev.github.io/blog/checkcup---browserless-puppetter-project-build./</guid><description>&lt;h2 id="checkcup">Checkcup&lt;/h2>
+&lt;p>Checkcup is a website monitoring tool that fetches the status of websites along with screenshots and active status. It is built using Next.js for the frontend and Puppeteer with Browserless in the backend.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>Fetches website status including HTTP status code, response time, and active status.&lt;/li>
+&lt;li>Captures screenshots of websites for visual verification.&lt;/li>
+&lt;li>Supports monitoring multiple websites simultaneously.&lt;/li>
+&lt;/ul>
+&lt;h2 id="demo">Demo&lt;/h2>
+&lt;p>{% embed &lt;a href="https://github.com/priyanshuverma-dev/quine-checkcup">https://github.com/priyanshuverma-dev/quine-checkcup&lt;/a> %}&lt;/p>
+&lt;h2 id="live-preview">Live Preview&lt;/h2>
+&lt;p>You can view a live preview of Checkcup &lt;a href="https://quine-checkcup.vercel.app/">here&lt;/a>.&lt;/p></description></item></channel></rss>
