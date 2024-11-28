@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hack23contributor on My Writings - Priyanshu Verma</title>
+    <link>http://localhost:1313/blog/tags/hack23contributor/</link>
+    <description>Recent content in Hack23contributor on My Writings - Priyanshu Verma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Oct 2023 15:50:55 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/hack23contributor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Hacktoberfest 2023 Experience</title>
+      <link>http://localhost:1313/blog/my-hacktoberfest-2023-experience/</link>
+      <pubDate>Sat, 28 Oct 2023 15:50:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/my-hacktoberfest-2023-experience/</guid>
+      <description>My Hacktoberfest 2023 Experience
+Intro Hey there! I&rsquo;m excited to share my experience as a contributor during Hacktoberfest 2023. This isn&rsquo;t my first Hacktoberfest; I&rsquo;ve been participating for a few years now, and each year has been a unique journey filled with learning and growth. You can check out my GitHub profile here.
+Highs and Lows This year, I had some fantastic highs and a few challenging lows. One of my biggest accomplishments was getting one of my pull requests accepted in a major open-source project. It was a feature I had been working on for a while, and seeing it integrated into the project was incredibly satisfying. This achievement boosted my confidence and encouraged me to continue contributing.
+</description>
+    </item>
+    
+  </channel>
+</rss>

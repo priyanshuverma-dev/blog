@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:site_name" content="My Writings - Priyanshu Verma">
+<meta property="og:url" content="http://localhost:1313/blog/create-your-own-template-for-cyclops/">
+<meta property="og:title" content="Create your own template for cyclops">
+<meta property="og:description" content="Hello there, In this blog we are going to make a custom template for Cyclops. So, that we can easily is full power of cyclops.
+What is Cyclops? Cyclops is an innovative web-based tool designed to simplify the management of distributed systems, specifically focusing on the widely used Kubernetes platform. By providing a user-friendly interface, Cyclops abstracts complex Kubernetes configuration files into intuitive web forms, making it easier for developers to deploy applications and manage Kubernetes environments. It offers predefined fields and graphical representations of deployments, enhancing visibility and reducing the learning curve associated with Kubernetes. Cyclops aims to empower IT operations teams, DevOps teams, developers and business owners, enabling them to streamline processes, increase productivity, and achieve cost savings in managing Kubernetes clusters. (Read More)
+">
+
+<meta name="description" content="Hello there, In this blog we are going to make a custom template for Cyclops. So, that we can easily is full power of cyclops.
+What is Cyclops? Cyclops is an innovative web-based tool designed to simplify the management of distributed systems, specifically focusing on the widely used Kubernetes platform. By providing a user-friendly interface, Cyclops abstracts complex Kubernetes configuration files into intuitive web forms, making it easier for developers to deploy applications and manage Kubernetes environments. It offers predefined fields and graphical representations of deployments, enhancing visibility and reducing the learning curve associated with Kubernetes. Cyclops aims to empower IT operations teams, DevOps teams, developers and business owners, enabling them to streamline processes, increase productivity, and achieve cost savings in managing Kubernetes clusters. (Read More)
+">
+
+<title>Create your own template for cyclops | My Writings - Priyanshu Verma</title>
+<link rel="canonical" href="http://localhost:1313/blog/create-your-own-template-for-cyclops/">
+
+ 
+ 
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    
+    
+    
+    <link rel="stylesheet" href="/blog/bundle.min.css">
+</head>
+<body>
+
+<div id="body-wrapper">
+    <div id="left-wrapper">
+        
+
+    </div>
+    <div id="center-wrapper">
+        
+<div id="header">
+  <div class="main-menu pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list"> 
+      <li
+        class="pure-menu-item "
+      >
+        <a
+          class="pure-menu-link"
+          href="https://priyanshuverma-dev.github.io/"
+          >Home</a>
+      </li> 
+      <li
+        class="pure-menu-item "
+      >
+        <a
+          class="pure-menu-link"
+          href="/blog/"
+          >Blog</a>
+      </li> 
+      <li
+        class="pure-menu-item "
+      >
+        <a
+          class="pure-menu-link"
+          href="/blog/tags/"
+          >Tags</a>
+      </li>
+    </ul>
+
+    <div class="translation-menu">
+    </div>
+  </div>
+</div>
+
+        <div id="main">
+            
+    
+<div class="post-title">
+        <h1>
+            Create your own template for cyclops</h1>
+</div>
+<div class="post-meta">
+        <span>2024-07-22</span>
+        &nbsp;
+        
+    
+    <a class="post-tag" href="/blog/tags/cyclops/">Cyclops</a>
+    &nbsp;
+    <a class="post-tag" href="/blog/tags/devops/">Devops</a>
+    &nbsp;
+    <a class="post-tag" href="/blog/tags/kubernetes/">Kubernetes</a>
+    &nbsp;
+    <a class="post-tag" href="/blog/tags/docker/">Docker</a>
+
+</div>
+<div class="post-content"><p>Hello there,
+In this blog we are going to make a custom template for <a href="https://cyclops-ui.com">Cyclops</a>. So, that we can easily is full power of cyclops.</p>
+<h2 id="what-is-cyclops">What is Cyclops?</h2>
+<p>Cyclops is an innovative web-based tool designed to simplify the management of distributed systems, specifically focusing on the widely used Kubernetes platform. By providing a user-friendly interface, Cyclops abstracts complex Kubernetes configuration files into intuitive web forms, making it easier for developers to deploy applications and manage Kubernetes environments. It offers predefined fields and graphical representations of deployments, enhancing visibility and reducing the learning curve associated with Kubernetes. Cyclops aims to empower IT operations teams, DevOps teams, developers and business owners, enabling them to streamline processes, increase productivity, and achieve cost savings in managing Kubernetes clusters. <a href="https://cyclops-ui.com/docs/about">(Read More)</a></p>
+<h2 id="now-lets-install-cyclops-locally-to-work-with">Now Let&rsquo;s install Cyclops locally to work with.</h2>
+<p>To run Cyclops locally we need following installed in our PC:</p>
+<ul>
+<li><a href="https://www.docker.com/">Docker</a></li>
+<li><a href="https://minikube.sigs.k8s.io/docs/">Minikube</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/tools/">Kubernetes</a></li>
+<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL</a> (for windows)</li>
+</ul>
+<p>If you have installed setup the environment then let&rsquo;s dive in running Cyclops instance.</p>
+<ol>
+<li>
+<p>Start Docker Service as per your OS.</p>
+</li>
+<li>
+<p>Start minikube. Run the command given below in your terminal (for windows open WSL).</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>minikube start
+</span></span></code></pre></div><ol start="3">
+<li>Install Cyclops cluster <a href="https://cyclops-ui.com/docs/installation/install/manifest">(more info)</a>.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://raw.githubusercontent.com/cyclops-ui/cyclops/v0.8.2/install/cyclops-install.yaml <span style="color:#f92672">&amp;&amp;</span> kubectl apply -f https://raw.githubusercontent.com/cyclops-ui/cyclops/v0.8.2/install/demo-templates.yaml
+</span></span></code></pre></div><p>It will create a namespace callled <code>Cyclops</code> and deploy everything you need for your Cyclops instance to run.</p>
+<ol start="4">
+<li>Expose Cyclops Server outside the cluster.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl port-forward svc/cyclops-ui 3000:3000 -n cyclops
+</span></span></code></pre></div><p>Now you can open <code>http://localhost:3000</code> in your browser to access Cyclops Dashboard.</p>
+<h2 id="how-to-deploy-servic">How to Deploy servic</h2>
+<p>You can deploy any service by clicking to <code>Add module</code> button and selecting your desire service in just few clicks.</p>
+<h2 id="how-to-create-custom-template">How to create custom template</h2>
+<p>If you worked with <a href="https://helm.sh/">Helm</a> you will have great time using Cyclops because Cyclops is a wrapper on top of Helm.
+You can create your custom template just like you create a template of Helm only thing you had to do is creating <code>values.schema.json</code>. This file is important for cyclops to render UI related to configuration of the template.</p>
+<h2 id="lets-create-template">Let&rsquo;s create template</h2>
+<p>We are going to create a simple template for <a href="https://min.io/">MinIO</a>. MinIO is a high-performance, S3 compatible object store.</p>
+<ol>
+<li>Create a folder to keep your files and create some files like this tree.</li>
+</ol>
+<pre tabindex="0"><code>mino-io
+│   Chart.yaml
+│   values.schema.json
+│   values.yaml
+│
+└───templates
+        deployment.yaml
+        pvc.yaml
+        secret.yaml
+        service.yaml
+        _helpers.tpl
+</code></pre><h3 id="understand-the-structure">Understand the structure</h3>
+<p>If you are from Helm background structure should be familiar to you. If not don&rsquo;t worry let&rsquo;s break it down.</p>
+<h4 id="chartyaml">Chart.yaml</h4>
+<p>This file will have the metadata like name, description and version of the template like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">minio</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#ae81ff">0.0.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">icon</span>: <span style="color:#ae81ff">https://min.io/resources/favs/apple-icon-180x180.png</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: <span style="color:#ae81ff">A Helm chart for deploying MinIO, a high-performance object storage solution.</span>
+</span></span></code></pre></div><h4 id="valuesyaml">values.yaml</h4>
+<p>This file is very important because it contain the default values for a chart. These values may be overridden as Cyclops UI configuration changes.
+For our template it looks like</p>
+<pre tabindex="0"><code>replicas: 1
+
+username: minioadmin
+password: minioadmin
+
+storage:
+  size: 1Gi
+
+service:
+  port: 9000
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 1000m
+    memory: 2Gi
+</code></pre><p>We have value of replicas default to 1.
+default username and password, storage size, port and resources.</p>
+<p>We can change these values from cyclops UI when we deploy the template.
+For that we need to create a file values.schema.json</p>
+<h4 id="valuesschemajson">values.schema.json</h4>
+<p>This file is a necessary component in your templates. This file is usually used to impose a structure on the <code>values.yaml</code> file, but it is also crucial for rendering the GUI in Cyclops. The schema is represented as a <a href="https://json-schema.org/">JSON Schema</a>
+For our template it looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;username&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;User for MinIO (store in Kubernetes Secret)&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;password&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Pass key for MinIO (store in Kubernetes Secret)&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;replicas&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Number of MinIO server pods to deploy&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;storage&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Storage&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;size&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Size of storage allocated to each MinIO pod&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;enum&#34;</span>: [
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;1Gi&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;2Gi&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;4Gi&#34;</span>
+</span></span><span style="display:flex;"><span>                    ]
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;storageClass&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Storage class for persistent storage (optional)&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            },
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;required&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;size&#34;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;service&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Service&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;port&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Port on which the MinIO service is exposed (default: 9000)&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;integer&#34;</span>
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Service type (default: ClusterIP)&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;enum&#34;</span>: [
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;ClusterIP&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;LoadBalancer&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;NodePort&#34;</span>
+</span></span><span style="display:flex;"><span>                    ]
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;resources&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Resources&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;requests&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Resource Requests&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;cpu&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Minimum CPU resources requested by MinIO&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;memory&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Minimum memory resources requested by MinIO&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;limits&#34;</span>: {
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Resource Limits&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;cpu&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Maximum CPU resources allocated to MinIO&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>                        },
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;memory&#34;</span>: {
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Maximum memory resources allocated to MinIO&#34;</span>,
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>                        }
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;extraArgs&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Additional arguments to pass to the MinIO binary&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;array&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;items&#34;</span>: {
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;order&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;username&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;password&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;service&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;replicas&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;resources&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;extraArgs&#34;</span>
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;required&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;username&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;password&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;replicas&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;storage&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;service&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;resources&#34;</span>
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Values&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;object&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This file is self explanatory. We populated <code>properties</code> of type <code>object</code> and added required fields for <a href="https://cyclops-ui.com/docs/templates/">More info</a>.</p>
+<p>Now Let&rsquo;s see inside <code>/templates</code> folder.</p>
+<h4 id="deploymentyaml">deployment.yaml</h4>
+<p>This YAML configuration defines a Kubernetes <code>Deployment</code> for a MinIO server using Helm templates. Let&rsquo;s break down each part of the configuration:</p>
+<h3 id="apiversion-and-kind">apiVersion and kind</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span></code></pre></div><ul>
+<li><code>apiVersion: apps/v1</code>: Specifies the API version used for the <code>Deployment</code> resource.</li>
+<li><code>kind: Deployment</code>: Indicates that this configuration is for a <code>Deployment</code>.</li>
+</ul>
+<h3 id="metadata">metadata</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio</span>
+</span></span></code></pre></div><ul>
+<li><code>metadata</code>: Metadata about the <code>Deployment</code>.</li>
+<li><code>name</code>: The name of the deployment is dynamically set using Helm templating, where <code>{{ .Release.Name }}</code> refers to the release name provided in the <code>Chart.yaml</code> file, appended with <code>-minio</code>.</li>
+</ul>
+<h3 id="spec">spec</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: {{ <span style="color:#ae81ff">.Values.replicas | default 1 }}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">minio</span>
+</span></span></code></pre></div><ul>
+<li><code>spec</code>: Specifies the desired state of the deployment.</li>
+<li><code>replicas</code>: The number of pod replicas to run, which is dynamically set using file <code>values.yaml</code>, defaulting to 1 if not specified.</li>
+<li><code>selector</code>: Defines how the deployment finds which pods to manage, using labels. Here, it matches pods labeled with <code>app: minio</code>.</li>
+</ul>
+<h3 id="template">template</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">minio</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">checksum/config</span>: {{ <span style="color:#ae81ff">include (print $.Template.BasePath &#34;/secret.yaml&#34;) . | sha256sum }}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">minio</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">quay.io/minio/minio:latest</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">command</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">/bin/bash</span>
+</span></span><span style="display:flex;"><span>        - -<span style="color:#ae81ff">c</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">args</span>: 
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">minio server /data --console-address :9090</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">containerPort</span>: <span style="color:#ae81ff">9000</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">volumeMounts</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">minio-data</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">mountPath</span>: <span style="color:#ae81ff">/data</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">MINIO_ROOT_USER</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">valueFrom</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">configMapKeyRef</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">name</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio-config</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">key</span>: <span style="color:#ae81ff">MINIO_ROOT_USER</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">MINIO_ROOT_PASSWORD</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">valueFrom</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">configMapKeyRef</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">name</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio-config</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">key</span>: <span style="color:#ae81ff">MINIO_ROOT_PASSWORD</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">minio-data</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">persistentVolumeClaim</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">claimName</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio-pvc</span>
+</span></span></code></pre></div><h4 id="templatemetadata">template.metadata</h4>
+<ul>
+<li><code>metadata</code>: Metadata for the pod template.
+<ul>
+<li><code>labels</code>: Labels to identify the pods, here <code>app: minio</code>.</li>
+<li><code>annotations</code>: Additional information for the pod, using a checksum of the contents of <code>secret.yaml</code> to ensure that pods are redeployed when the secret changes.</li>
+</ul>
+</li>
+</ul>
+<h4 id="templatespec">template.spec</h4>
+<ul>
+<li><code>spec</code>: Specification for the pod.
+<ul>
+<li><code>containers</code>: List of containers to run in the pod.
+<ul>
+<li><code>name</code>: Name of the container, <code>minio</code>.</li>
+<li><code>image</code>: The container image to use, <code>quay.io/minio/minio:latest</code>.</li>
+<li><code>command</code> and <code>args</code>: Command and arguments to run inside the container. Here, it runs the MinIO server with the console accessible at port 9090.</li>
+<li><code>ports</code>: Container port exposed, <code>9000</code>.</li>
+<li><code>volumeMounts</code>: Mounts a volume to the container, with <code>minio-data</code> mounted at <code>/data</code>.</li>
+<li><code>env</code>: Environment variables for the container.
+<ul>
+<li><code>MINIO_ROOT_USER</code> and <code>MINIO_ROOT_PASSWORD</code>: Set from a <code>ConfigMap</code> specified by <code>name: {{ .Release.Name }}-minio-config</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="templatespecvolumes">template.spec.volumes</h4>
+<ul>
+<li><code>volumes</code>: Volumes to attach to the pod.
+<ul>
+<li><code>name</code>: Name of the volume, <code>minio-data</code>.</li>
+<li><code>persistentVolumeClaim</code>: References a PVC (Persistent Volume Claim) to use for storage, with the claim name set dynamically using <code>{{ .Release.Name }}-minio-pvc</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="serviceyaml">service.yaml</h4>
+<p>This file is used for creating a <a href="https://kubernetes.io/docs/concepts/services-networking/service/">service endpoint</a> for your deployment.
+For our template it is written as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio-service</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">app</span>: <span style="color:#ae81ff">minio</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">protocol</span>: <span style="color:#ae81ff">TCP</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">port</span>: <span style="color:#ae81ff">80</span>  <span style="color:#75715e"># Adjust port if needed (external access)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">targetPort</span>: <span style="color:#ae81ff">9000</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: {{ <span style="color:#ae81ff">.Values.service.type | default &#34;ClusterIP&#34; }} </span> <span style="color:#75715e"># Adjust type for external access</span>
+</span></span></code></pre></div><p>The service targets pods labeled with app: minio, forwards traffic from port 80 (or any other specified port) to port 9000 on the pods, and defaults to a ClusterIP type unless overridden by the provided values.</p>
+<h3 id="pvcyaml">pvc.yaml</h3>
+<p>This file is used to create <code>PersistentVolumeClaim</code> (PVC) resource for the MinIO deployment, allowing it to request persistent storage. This file is optional for the template we are using because we need managed persistent storage. Let&rsquo;s break down each part of the configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">PersistentVolumeClaim</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio-pvc</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">accessModes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ReadWriteOnce</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">requests</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">storage</span>: {{ <span style="color:#ae81ff">.Values.storage.size }}</span>
+</span></span></code></pre></div><p>This YAML configuration defines a Kubernetes <code>PersistentVolumeClaim</code> (PVC) resource for the MinIO deployment, allowing it to request persistent storage. Let&rsquo;s break down each part of the configuration:</p>
+<ul>
+<li><code>apiVersion: v1</code>: Specifies the API version used for the <code>PersistentVolumeClaim</code> resource.</li>
+<li><code>kind: PersistentVolumeClaim</code>: Indicates that this configuration is for a <code>PersistentVolumeClaim</code>.</li>
+<li><code>metadata</code>: Metadata about the <code>PersistentVolumeClaim</code>.</li>
+<li><code>name</code>: The name of the PVC is dynamically set using Helm templating, where <code>{{ .Release.Name }}</code> refers to the release name provided during the Helm chart installation, appended with <code>-minio-pvc</code>.</li>
+<li><code>spec</code>: Specifies the desired state of the PVC.</li>
+<li><code>accessModes</code>: Defines the access mode for the PVC.
+<ul>
+<li><code>ReadWriteOnce</code>: The volume can be mounted as read-write by a single node. This is suitable for scenarios where the volume does not need to be shared across multiple nodes.</li>
+</ul>
+</li>
+<li><code>resources</code>: Specifies the resource requirements for the PVC.
+<ul>
+<li><code>requests</code>: Requests specific resources for the PVC.
+<ul>
+<li><code>storage</code>: The amount of storage requested for the PVC. This is dynamically set, where <code>{{ .Values.storage.size }}</code> refers to a value provided in <code>values.yaml</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="secretyaml">secret.yaml</h4>
+<p>This file will have the environment variables for secrets for service like API key, username, password. This file is very simple as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ConfigMap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: {{ <span style="color:#ae81ff">.Release.Name }}-minio-config</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">MINIO_ROOT_USER</span>: {{ <span style="color:#ae81ff">.Values.username | quote }}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">MINIO_ROOT_PASSWORD</span>: {{ <span style="color:#ae81ff">.Values.password | quote }}</span>
+</span></span></code></pre></div><p>Here inside <code>data</code> we created to variables for <code>MINIO_ROOT_USER</code> and <code>MINIO_ROOT_PASSWORD</code>. values will get from GUI or default values we put thin <code>values.yaml</code>.</p>
+<p>At last We need a helper file to restart the service if these secrets change to reflect in deployment for that we will create <code>_helpers.tpl</code></p>
+<h4 id="_helpertpl">_helper.tpl</h4>
+<p>This file is completely optional for special condition like our template need to restart when values change. We need this file it includes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tpl" data-lang="tpl"><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">/*</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Generate</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">checksum</span> <span style="color:#a6e22e">for</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">given</span> <span style="color:#a6e22e">configmap</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">*/</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">define</span> <span style="color:#e6db74">&#34;configmap-checksum&#34;</span> <span style="color:#f92672">-</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">-</span> $sum <span style="color:#f92672">:=</span> <span style="color:#a6e22e">sha256sum</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">include</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">print</span> <span style="color:#960050;background-color:#1e0010">$</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Template</span><span style="color:#f92672">.</span><span style="color:#a6e22e">BasePath</span> <span style="color:#e6db74">&#34;/secret.yaml&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">.)</span> <span style="color:#f92672">-</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">-</span> $sum <span style="color:#f92672">-</span><span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span><span style="color:#f92672">-</span> <span style="color:#a6e22e">end</span> <span style="color:#f92672">-</span><span style="color:#75715e">}}</span>
+</span></span></code></pre></div><p>It defines the function <code>configmap-checksum</code> inside that calculates the SHA-256 checksum of the content of a file named <code>secret.yaml</code>. The checksum is useful for tracking changes in the ConfigMap, allowing you to use it in annotations or labels to trigger pod redeployments when the ConfigMap content changes.</p>
+<p>See in <code>deployment.yaml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">minio</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">checksum/config</span>: {{ <span style="color:#ae81ff">include (print $.Template.BasePath &#34;/secret.yaml&#34;) . | sha256sum }}</span>
+</span></span></code></pre></div><p>In <code>annotations</code>. We are checking checksum/config for any changes if there is any change the it will restart the service automatically.</p>
+<p>That&rsquo;s all we need to create a template we have successfully created our custom template. Check out <a href="https://github.com/priyanshuverma-dev/helm/tree/main/minIO">GitHub repository</a> of same template.</p>
+<p>Now let&rsquo;s deploy with Cyclops for that there are ways of storing template. Cyclops can access charts stored in three different ways:</p>
+<ol>
+<li>GitHub Repository</li>
+<li>Helm Chart Repository</li>
+<li>OCI Repository</li>
+</ol>
+<p>We are going to use GitHub Repository. Let&rsquo;s initialize our project with <a href="https://git-scm.com/">git</a></p>
+<p>open terminal in your working directory where you stored your template
+and run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>It will initialize your folder with git then run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><p>To add all the files then commit with any message</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;any message&gt;&#34;</span>
+</span></span></code></pre></div><p>Then push the code to GitHub</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div><p>Remember you need to add origin to your repository <a href="https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository">More Info</a></p>
+<h2 id="add-template-in-cyclops">Add template in Cyclops</h2>
+<p>To add template in cyclops go to Cyclops dashboard in templates tab.</p>
+<p><img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2pu6in89s0b3g4m8p94t.png" alt="Cyclops Templates Tab"></p>
+<p>click the Add template reference. A modal will appear asking you for a pointer to your template <a href="https://cyclops-ui.com/docs/templates/template_storage">Read More</a>.</p>
+<p>Give Name to template in <code>Name</code>.
+Put GitHub repository URL in <code>Repository URL</code>.
+Enter the <code>Path</code> where files are in our case it is <code>/min-io</code>.
+Enter the <code>Version</code> which  can be left empty / branch name / tag / commit hash.
+Now Save, And goto <code>Modules</code> Tab and click on the Add module button in the top right corner. Under Module template you will find your custom template with the name with which you saved it.</p>
+<p>This was about how to create a custom template for Cyclops and deploy it.</p>
+<p>Thanks
+Priyanshu Verma</p>
+</div>
+
+
+        </div>
+        
+<div id="footer">
+  <span class="post-meta">
+    &copy; Priyanshu Verma &nbsp;2024
+  </span>
+  &nbsp;  
+  <a
+    href="/blog/sitemap.xml"
+    title="Sitemap"
+    target="_blank"
+    >Sitemap</a> &nbsp; 
+  <a
+    href="https://github.com/priyanshuverma-dev"
+    title="Github"
+    target="_blank"
+    >Github</a>
+</div>
+
+    </div>
+    <div id="right-wrapper">
+        
+
+    </div>
+</div>
+</body>
+</html>

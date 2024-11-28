@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacktoberfestchallenge on My Writings - Priyanshu Verma</title>
+    <link>http://localhost:1313/blog/tags/hacktoberfestchallenge/</link>
+    <description>Recent content in Hacktoberfestchallenge on My Writings - Priyanshu Verma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Nov 2024 16:02:56 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/hacktoberfestchallenge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My journey of open-sourcing 2024</title>
+      <link>http://localhost:1313/blog/my-journey-of-open-sourcing-2024/</link>
+      <pubDate>Wed, 06 Nov 2024 16:02:56 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/my-journey-of-open-sourcing-2024/</guid>
+      <description>Introduction 👋 Hello Devs! I am Priyanshu Verma, a aspiring Technologist and Open-source developer. I have recently participated in bunch of events in October.
+I have participated in events:
+Hacktoberfest Devfest Quira Hacktoberfest GSSOC This October 2024 was my busiest year in open-source.
+Hacktoberfest 2024 This is my 2nd year of participating in Hacktoberfest and this year I broke my record of pulling requests.
+I have contributed in bunch of repositories will tell in next sections.
+</description>
+    </item>
+    
+  </channel>
+</rss>

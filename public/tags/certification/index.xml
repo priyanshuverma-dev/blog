@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certification on My Writings - Priyanshu Verma</title>
+    <link>http://localhost:1313/blog/tags/certification/</link>
+    <description>Recent content in Certification on My Writings - Priyanshu Verma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Jun 2024 03:48:13 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/certification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Showcase Your Achievements Securely with CertiFolio 🚀</title>
+      <link>http://localhost:1313/blog/showcase-your-achievements-securely-with-certifolio-/</link>
+      <pubDate>Sat, 22 Jun 2024 03:48:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/showcase-your-achievements-securely-with-certifolio-/</guid>
+      <description>Hello Dev.to community!
+We&rsquo;re thrilled to introduce CertiFolio, a groundbreaking platform designed to securely upload, showcase, and verify your certificates and achievements using the power of the InterPlanetary File System (IPFS).
+Why CertiFolio? In today’s digital age, managing and verifying your credentials can be cumbersome and insecure. CertiFolio leverages decentralized storage to offer a robust, user-friendly solution to this problem. Here’s a sneak peek into what makes CertiFolio unique:
+🌟 Features Decentralized Storage: Store your certificates on IPFS for secure, permanent access, eliminating the risk of centralized data breaches. Verification: Utilize blockchain technology to ensure the authenticity of your certificates, making verification seamless and trustworthy. User-Friendly Interface: Our intuitive design simplifies the process of uploading, viewing, and managing your achievements. 🚀 Getting Started Ready to take CertiFolio for a spin? Follow these steps to set up and start using the platform:
+</description>
+    </item>
+    
+  </channel>
+</rss>

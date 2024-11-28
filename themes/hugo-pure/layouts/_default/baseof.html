@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{- partial "meta.html" . }}
+    {{- partial "favicon.html" . }}
+
+    {{- $css := slice }}
+    <!-- https://purecss.io/ -->
+    {{- $css = $css | append (resources.Get "pure.css") }}
+    <!-- main.css -->
+    {{- $css = $css | append (resources.Get "main.css") }}
+    {{- $css = $css | append (resources.Get "syntax-light.css") }}
+    {{- $css = $css | append (resources.Get "syntax-dark.css") }}
+    <!-- packing css -->
+    {{- $css = $css | resources.Concat "bundle.css" }}
+    {{- $css = $css | resources.Minify }}
+    <link rel="stylesheet" href="{{- $css.RelPermalink -}}">
+
+    {{- block "css" . }}{{- end }}
+</head>
+<body>
+
+<div id="body-wrapper">
+    <div id="left-wrapper">
+        {{ block "left-side" . }}{{ end }}
+    </div>
+    <div id="center-wrapper">
+        {{ partial "header.html" . }}
+        <div id="main">
+            {{ block "main" . }}{{ end }}
+        </div>
+        {{ partial "footer.html" . }}
+    </div>
+    <div id="right-wrapper">
+        {{ block "right-side" . }}{{ end }}
+    </div>
+</div>
+
+{{- block "js" . }}{{- end }}
+</body>
+</html>

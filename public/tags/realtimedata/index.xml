@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Realtimedata on My Writings - Priyanshu Verma</title>
+    <link>http://localhost:1313/blog/tags/realtimedata/</link>
+    <description>Recent content in Realtimedata on My Writings - Priyanshu Verma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Nov 2024 11:49:23 +0000</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/realtimedata/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy Fluvio with Cloud Cluster for free.</title>
+      <link>http://localhost:1313/blog/deploy-fluvio-with-cloud-cluster-for-free./</link>
+      <pubDate>Thu, 14 Nov 2024 11:49:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/deploy-fluvio-with-cloud-cluster-for-free./</guid>
+      <description>Hello builders, Many of you knows me but in case I am Priyanshu Verma, An Open-source Indie Developer.
+In this Article we are going to talk about how you can deploy Fluvio integrated apps like APIs on internet for free. It is very easy to do so, As Today I will guide you how to. So, Without any delay let&rsquo;s see what to do.
+As To deploy fluvio we need a project with it&rsquo;s integration. I have one from recent Fluvio Series. This is a basic Nodejs Express API with some endpoints and fluvio integration. I won&rsquo;t explain more about it you can explore this on GitHub. This article is just for deployment.
+</description>
+    </item>
+    
+  </channel>
+</rss>

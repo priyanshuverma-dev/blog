@@ -1,0 +1,42 @@
+baseURL = 'https://priyanshuverma-dev.github.io/blog'
+languageCode = 'en-us'
+title = 'My Writings - Priyanshu Verma'
+
+paginate      = 10
+
+[menus]
+[[menus.main]]
+identifier = "menu1"
+name       = "Home"
+url    = "https://priyanshuverma-dev.github.io/"
+weight     = 1
+
+[[menus.main]]
+identifier = "menu2"
+name       = "Blog"
+pageRef    = "/"
+weight     = 9
+
+[[menus.main]]
+identifier = "menu3"
+name       = "Tags"
+pageRef    = "/tags/"
+weight     = 9
+
+[[menus.footer]]
+identifier = "github"
+name       = "Github"
+url        = "https://github.com/priyanshuverma-dev"
+weight     = 7
+[[menus.footer.params]]
+targetBlank = true
+
+[[menus.footer]]
+identifier = "sitemap"
+name       = "Sitemap"
+url    = "/sitemap.xml"
+weight     = 5
+
+[[menus.footer.params]]
+targetBlank = true
+format      = "rss"
