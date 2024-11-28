@@ -1,6 +1,7 @@
 ---
 title: "Saavn Music Player for Windows"
 date: 2024-06-12T16:25:46Z
+image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Flwb0pdqs3oypvjlpal3e.png"
 tags:
   - flutter
   - music

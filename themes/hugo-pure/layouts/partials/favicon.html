@@ -1,4 +1,4 @@
-{{- $favicon := resources.Get "favicon.png" }}
+{{- $favicon := resources.Get "favicon.ico" }}
 {{- with $favicon }}
 <link rel="icon" type="image/png" href="{{- .RelPermalink -}}">
 {{- else }}

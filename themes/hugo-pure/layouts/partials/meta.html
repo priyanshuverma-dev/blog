@@ -20,13 +20,15 @@
         {{- $description = "" }}
     {{- end }}
 
-    {{- $image := .Resources.Get "poster.webp" }}
-    {{- if not $image }}
-        {{- $image = .Resources.Get "banner.webp" }}
-    {{- end }}
-    {{- with $image }}
-        <meta property="og:image" content="{{- .Permalink -}}">
-    {{- end }}
+    {{- $image := .Params.image }} <!-- Get the 'image' field from front matter -->
+        {{- if not $image }}
+        {{- $image = printf "https://www.dynamicog.com/og/docs/img?logo=https%%3A%%2F%%2Fpriyanshuverma-dev.github.io%%2Fme.jpg&title=%s&sub=My%%20Writings%%20-%%20Priyanshu%%20Verma&name=Blog&website=https%%3A%%2F%%2Fpriyanshuverma-dev.github.io&dark=true" $previewTitle }}
+        {{- end }}
+        {{- with $image }}
+            <meta property="og:image" content="{{- . -}}">
+            <meta name="twitter:image" content="{{- . -}}">
+        {{- end }}
+
 {{- end }}
 
 <meta charset="UTF-8">
@@ -36,7 +38,9 @@
 <meta property="og:url" content="{{- .Permalink -}}">
 <meta property="og:title" content="{{- $previewTitle -}}">
 <meta property="og:description" content="{{- $description -}}">
-
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{- $previewTitle -}}">
+<meta name="twitter:description" content="{{- $description -}}">
 <meta name="description" content="{{- $description -}}">
 
 <title>{{- $pageTitle -}}</title>

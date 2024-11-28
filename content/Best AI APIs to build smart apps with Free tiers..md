@@ -1,6 +1,7 @@
 ---
 title: "Best AI APIs to build smart apps with Free tiers."
 date: 2024-09-29T12:30:17Z
+image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F97io2rfrrm035ztf8pwi.png"
 tags:
   - webdev
   - ai

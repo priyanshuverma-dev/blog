@@ -1,6 +1,7 @@
 ---
 title: "My Hacktoberfest 2023 Experience"
 date: 2023-10-28T15:50:55Z
+image: "https://media2.dev.to/dynamic/image/width=1000,height=500,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fnfq2pe6tn7ynakjv3q3l.png"
 tags:
   - hack23contributor
 ---
